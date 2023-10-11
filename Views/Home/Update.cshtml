@@ -1,0 +1,38 @@
+﻿@model EmployeeModel
+
+<h1>Create Employee</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="FirstName">FirstName:</label>
+        <input asp-for="FirstName" id="FirstName" class="form-control" value="@Model.FirstName" />
+    </div>
+    <div class="form-group">
+        <label for="Lastasp-for">LastName:</label>
+        <input asp-for="LastName" id="LastName" class="form-control" value="@Model.LastName" />
+    </div>
+    <div class="form-group">
+        <label for="Patronimyc">Patronimyc:</label>
+        <input asp-for="Patronimyc" id="Patronimyc" class="form-control" value="@Model.Patronimyc" />
+    </div>
+    <div class="form-group">
+        <label for="Birthday">Birthday:</label>
+        <input asp-for="Birthday" id="Birthday" class="form-control" type="date" value="@Model.Birthday" />
+    </div>
+
+    <div class="form-group">
+        <label for="Department">Department:</label>
+        <input asp-for="Department" id="Department" class="form-control" value="@Model.Department" />
+    </div>
+    <div class="form-group">
+        <label for="Position">Position:</label>
+        <input asp-for="Position" id="Position" class="form-control" value="@Model.Position" />
+    </div>
+    <div class="form-group">
+        <label for="Salary">Salary:</label>
+        <input asp-for="Salary" id="Salary" class="form-control" type="number" step="0.1" value="@Model.Salary" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+
